@@ -13,7 +13,7 @@ st.title('Diabetic Retinopathy Detection')
 
 # Function to preprocess image
 def preprocess_image(image):
-    image = image.resize((225, 225))
+    image = image.resize((224, 225))
     image = np.asarray(image) / 255.
     return np.expand_dims(image, axis=0)
 
